@@ -7,26 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3DFACE3728421CE5007DFB65 /* DankeUbiqueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFACE3628421CE5007DFB65 /* DankeUbiqueApp.swift */; };
-		3DFACE3928421CE5007DFB65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFACE3828421CE5007DFB65 /* ContentView.swift */; };
-		3DFACE3B28421CE6007DFB65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DFACE3A28421CE6007DFB65 /* Assets.xcassets */; };
-		3DFACE3E28421CE6007DFB65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DFACE3D28421CE6007DFB65 /* Preview Assets.xcassets */; };
-		3DFACE4028421CE6007DFB65 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFACE3F28421CE6007DFB65 /* Persistence.swift */; };
-		3DFACE4328421CE6007DFB65 /* DankeUbique.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DFACE4128421CE6007DFB65 /* DankeUbique.xcdatamodeld */; };
+		3D5EEA9E28421F3400255280 /* DankeUbiqueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EEA9D28421F3400255280 /* DankeUbiqueApp.swift */; };
+		3D5EEAA028421F3400255280 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EEA9F28421F3400255280 /* ContentView.swift */; };
+		3D5EEAA228421F3400255280 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EEAA128421F3400255280 /* Assets.xcassets */; };
+		3D5EEAA528421F3400255280 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EEAA428421F3400255280 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3DFACE3328421CE5007DFB65 /* DankeUbique.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DankeUbique.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DFACE3628421CE5007DFB65 /* DankeUbiqueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DankeUbiqueApp.swift; sourceTree = "<group>"; };
-		3DFACE3828421CE5007DFB65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3DFACE3A28421CE6007DFB65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3DFACE3D28421CE6007DFB65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3DFACE3F28421CE6007DFB65 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		3DFACE4228421CE6007DFB65 /* DankeUbique.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DankeUbique.xcdatamodel; sourceTree = "<group>"; };
+		3D5EEA9A28421F3400255280 /* DankeUbique.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DankeUbique.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D5EEA9D28421F3400255280 /* DankeUbiqueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DankeUbiqueApp.swift; sourceTree = "<group>"; };
+		3D5EEA9F28421F3400255280 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3D5EEAA128421F3400255280 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D5EEAA428421F3400255280 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3DFACE3028421CE5007DFB65 /* Frameworks */ = {
+		3D5EEA9728421F3400255280 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,39 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3DFACE2A28421CE5007DFB65 = {
+		3D5EEA9128421F3400255280 = {
 			isa = PBXGroup;
 			children = (
-				3DFACE3528421CE5007DFB65 /* DankeUbique */,
-				3DFACE3428421CE5007DFB65 /* Products */,
+				3D5EEA9C28421F3400255280 /* DankeUbique */,
+				3D5EEA9B28421F3400255280 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3DFACE3428421CE5007DFB65 /* Products */ = {
+		3D5EEA9B28421F3400255280 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3DFACE3328421CE5007DFB65 /* DankeUbique.app */,
+				3D5EEA9A28421F3400255280 /* DankeUbique.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3DFACE3528421CE5007DFB65 /* DankeUbique */ = {
+		3D5EEA9C28421F3400255280 /* DankeUbique */ = {
 			isa = PBXGroup;
 			children = (
-				3DFACE3628421CE5007DFB65 /* DankeUbiqueApp.swift */,
-				3DFACE3828421CE5007DFB65 /* ContentView.swift */,
-				3DFACE3A28421CE6007DFB65 /* Assets.xcassets */,
-				3DFACE3F28421CE6007DFB65 /* Persistence.swift */,
-				3DFACE4128421CE6007DFB65 /* DankeUbique.xcdatamodeld */,
-				3DFACE3C28421CE6007DFB65 /* Preview Content */,
+				3D5EEA9D28421F3400255280 /* DankeUbiqueApp.swift */,
+				3D5EEA9F28421F3400255280 /* ContentView.swift */,
+				3D5EEAA128421F3400255280 /* Assets.xcassets */,
+				3D5EEAA328421F3400255280 /* Preview Content */,
 			);
 			path = DankeUbique;
 			sourceTree = "<group>";
 		};
-		3DFACE3C28421CE6007DFB65 /* Preview Content */ = {
+		3D5EEAA328421F3400255280 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				3DFACE3D28421CE6007DFB65 /* Preview Assets.xcassets */,
+				3D5EEAA428421F3400255280 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -76,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3DFACE3228421CE5007DFB65 /* DankeUbique */ = {
+		3D5EEA9928421F3400255280 /* DankeUbique */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3DFACE4628421CE6007DFB65 /* Build configuration list for PBXNativeTarget "DankeUbique" */;
+			buildConfigurationList = 3D5EEAA828421F3400255280 /* Build configuration list for PBXNativeTarget "DankeUbique" */;
 			buildPhases = (
-				3DFACE2F28421CE5007DFB65 /* Sources */,
-				3DFACE3028421CE5007DFB65 /* Frameworks */,
-				3DFACE3128421CE5007DFB65 /* Resources */,
+				3D5EEA9628421F3400255280 /* Sources */,
+				3D5EEA9728421F3400255280 /* Frameworks */,
+				3D5EEA9828421F3400255280 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -90,25 +84,25 @@
 			);
 			name = DankeUbique;
 			productName = DankeUbique;
-			productReference = 3DFACE3328421CE5007DFB65 /* DankeUbique.app */;
+			productReference = 3D5EEA9A28421F3400255280 /* DankeUbique.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3DFACE2B28421CE5007DFB65 /* Project object */ = {
+		3D5EEA9228421F3400255280 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					3DFACE3228421CE5007DFB65 = {
+					3D5EEA9928421F3400255280 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = 3DFACE2E28421CE5007DFB65 /* Build configuration list for PBXProject "DankeUbique" */;
+			buildConfigurationList = 3D5EEA9528421F3400255280 /* Build configuration list for PBXProject "DankeUbique" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,44 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 3DFACE2A28421CE5007DFB65;
-			productRefGroup = 3DFACE3428421CE5007DFB65 /* Products */;
+			mainGroup = 3D5EEA9128421F3400255280;
+			productRefGroup = 3D5EEA9B28421F3400255280 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3DFACE3228421CE5007DFB65 /* DankeUbique */,
+				3D5EEA9928421F3400255280 /* DankeUbique */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3DFACE3128421CE5007DFB65 /* Resources */ = {
+		3D5EEA9828421F3400255280 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DFACE3E28421CE6007DFB65 /* Preview Assets.xcassets in Resources */,
-				3DFACE3B28421CE6007DFB65 /* Assets.xcassets in Resources */,
+				3D5EEAA528421F3400255280 /* Preview Assets.xcassets in Resources */,
+				3D5EEAA228421F3400255280 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3DFACE2F28421CE5007DFB65 /* Sources */ = {
+		3D5EEA9628421F3400255280 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DFACE4028421CE6007DFB65 /* Persistence.swift in Sources */,
-				3DFACE3928421CE5007DFB65 /* ContentView.swift in Sources */,
-				3DFACE4328421CE6007DFB65 /* DankeUbique.xcdatamodeld in Sources */,
-				3DFACE3728421CE5007DFB65 /* DankeUbiqueApp.swift in Sources */,
+				3D5EEAA028421F3400255280 /* ContentView.swift in Sources */,
+				3D5EEA9E28421F3400255280 /* DankeUbiqueApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3DFACE4428421CE6007DFB65 /* Debug */ = {
+		3D5EEAA628421F3400255280 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -214,7 +206,7 @@
 			};
 			name = Debug;
 		};
-		3DFACE4528421CE6007DFB65 /* Release */ = {
+		3D5EEAA728421F3400255280 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -269,7 +261,7 @@
 			};
 			name = Release;
 		};
-		3DFACE4728421CE6007DFB65 /* Debug */ = {
+		3D5EEAA928421F3400255280 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -283,6 +275,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -295,11 +288,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		3DFACE4828421CE6007DFB65 /* Release */ = {
+		3D5EEAAA28421F3400255280 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -313,6 +306,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -325,45 +319,32 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3DFACE2E28421CE5007DFB65 /* Build configuration list for PBXProject "DankeUbique" */ = {
+		3D5EEA9528421F3400255280 /* Build configuration list for PBXProject "DankeUbique" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3DFACE4428421CE6007DFB65 /* Debug */,
-				3DFACE4528421CE6007DFB65 /* Release */,
+				3D5EEAA628421F3400255280 /* Debug */,
+				3D5EEAA728421F3400255280 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3DFACE4628421CE6007DFB65 /* Build configuration list for PBXNativeTarget "DankeUbique" */ = {
+		3D5EEAA828421F3400255280 /* Build configuration list for PBXNativeTarget "DankeUbique" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3DFACE4728421CE6007DFB65 /* Debug */,
-				3DFACE4828421CE6007DFB65 /* Release */,
+				3D5EEAA928421F3400255280 /* Debug */,
+				3D5EEAAA28421F3400255280 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		3DFACE4128421CE6007DFB65 /* DankeUbique.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				3DFACE4228421CE6007DFB65 /* DankeUbique.xcdatamodel */,
-			);
-			currentVersion = 3DFACE4228421CE6007DFB65 /* DankeUbique.xcdatamodel */;
-			path = DankeUbique.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = 3DFACE2B28421CE5007DFB65 /* Project object */;
+	rootObject = 3D5EEA9228421F3400255280 /* Project object */;
 }
