@@ -11,6 +11,7 @@
 		3D5EEAA228421F3400255280 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EEAA128421F3400255280 /* Assets.xcassets */; };
 		3D5EEAA528421F3400255280 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EEAA428421F3400255280 /* Preview Assets.xcassets */; };
 		3D5EEAAE28421FF200255280 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EEAAD28421FF200255280 /* MainView.swift */; };
+		3D65D38A28426191007374A7 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 3D65D38928426191007374A7 /* CodeScanner */; };
 		3DD51D2E28422B3400BECE4D /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD51D2D28422B3300BECE4D /* Manrope-Bold.ttf */; };
 		3DD51D3028422B3E00BECE4D /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD51D2F28422B3E00BECE4D /* Manrope-SemiBold.ttf */; };
 		3DD51D3228422B5D00BECE4D /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD51D3128422B5D00BECE4D /* Quicksand-Regular.ttf */; };
@@ -37,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D65D38A28426191007374A7 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +142,9 @@
 			dependencies = (
 			);
 			name = DankeUbique;
+			packageProductDependencies = (
+				3D65D38928426191007374A7 /* CodeScanner */,
+			);
 			productName = DankeUbique;
 			productReference = 3D5EEA9A28421F3400255280 /* DankeUbique.app */;
 			productType = "com.apple.product-type.application";
@@ -168,6 +173,9 @@
 				Base,
 			);
 			mainGroup = 3D5EEA9128421F3400255280;
+			packageReferences = (
+				3D65D38828426191007374A7 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = 3D5EEA9B28421F3400255280 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -409,6 +417,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D65D38828426191007374A7 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D65D38928426191007374A7 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D65D38828426191007374A7 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3D5EEA9228421F3400255280 /* Project object */;
 }
