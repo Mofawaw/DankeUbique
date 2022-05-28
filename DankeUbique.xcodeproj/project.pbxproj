@@ -11,6 +11,11 @@
 		3D5EEAA228421F3400255280 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EEAA128421F3400255280 /* Assets.xcassets */; };
 		3D5EEAA528421F3400255280 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EEAA428421F3400255280 /* Preview Assets.xcassets */; };
 		3D5EEAAE28421FF200255280 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EEAAD28421FF200255280 /* MainView.swift */; };
+		3DD51D2E28422B3400BECE4D /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD51D2D28422B3300BECE4D /* Manrope-Bold.ttf */; };
+		3DD51D3028422B3E00BECE4D /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD51D2F28422B3E00BECE4D /* Manrope-SemiBold.ttf */; };
+		3DD51D3228422B5D00BECE4D /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD51D3128422B5D00BECE4D /* Quicksand-Regular.ttf */; };
+		3DD51D3628422C0B00BECE4D /* Font+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD51D3528422C0B00BECE4D /* Font+Ext.swift */; };
+		3DD51D3828422D8600BECE4D /* CGFloat+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD51D3728422D8600BECE4D /* CGFloat+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		3D5EEAA128421F3400255280 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D5EEAA428421F3400255280 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D5EEAAD28421FF200255280 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		3DD51D2D28422B3300BECE4D /* Manrope-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Manrope-Bold.ttf"; path = "../../../../Downloads/Manrope/static/Manrope-Bold.ttf"; sourceTree = "<group>"; };
+		3DD51D2F28422B3E00BECE4D /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Manrope-SemiBold.ttf"; path = "../../../../Downloads/Manrope/static/Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
+		3DD51D3128422B5D00BECE4D /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Regular.ttf"; path = "../../../../Downloads/Quicksand/static/Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		3DD51D3328422B7800BECE4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3DD51D3528422C0B00BECE4D /* Font+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Ext.swift"; sourceTree = "<group>"; };
+		3DD51D3728422D8600BECE4D /* CGFloat+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +62,10 @@
 		3D5EEA9C28421F3400255280 /* DankeUbique */ = {
 			isa = PBXGroup;
 			children = (
+				3DD51D3428422BD700BECE4D /* Helper */,
 				3D5EEAAB28421F9400255280 /* Logic */,
 				3D5EEAAC28421FA200255280 /* Views */,
-				3D5EEAA128421F3400255280 /* Assets.xcassets */,
-				3D5EEAA328421F3400255280 /* Preview Content */,
+				3DD51D2B28422AD600BECE4D /* Utilities */,
 			);
 			path = DankeUbique;
 			sourceTree = "<group>";
@@ -81,6 +92,36 @@
 				3D5EEAAD28421FF200255280 /* MainView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3DD51D2B28422AD600BECE4D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3DD51D2C28422AE400BECE4D /* Fonts */,
+				3DD51D3328422B7800BECE4D /* Info.plist */,
+				3D5EEAA128421F3400255280 /* Assets.xcassets */,
+				3D5EEAA328421F3400255280 /* Preview Content */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		3DD51D2C28422AE400BECE4D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3DD51D2F28422B3E00BECE4D /* Manrope-SemiBold.ttf */,
+				3DD51D2D28422B3300BECE4D /* Manrope-Bold.ttf */,
+				3DD51D3128422B5D00BECE4D /* Quicksand-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3DD51D3428422BD700BECE4D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3DD51D3528422C0B00BECE4D /* Font+Ext.swift */,
+				3DD51D3728422D8600BECE4D /* CGFloat+Ext.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +183,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D5EEAA528421F3400255280 /* Preview Assets.xcassets in Resources */,
+				3DD51D2E28422B3400BECE4D /* Manrope-Bold.ttf in Resources */,
+				3DD51D3028422B3E00BECE4D /* Manrope-SemiBold.ttf in Resources */,
 				3D5EEAA228421F3400255280 /* Assets.xcassets in Resources */,
+				3DD51D3228422B5D00BECE4D /* Quicksand-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,8 +197,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD51D3828422D8600BECE4D /* CGFloat+Ext.swift in Sources */,
 				3D5EEA9E28421F3400255280 /* DankeUbiqueApp.swift in Sources */,
 				3D5EEAAE28421FF200255280 /* MainView.swift in Sources */,
+				3DD51D3628422C0B00BECE4D /* Font+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +334,7 @@
 				DEVELOPMENT_TEAM = M4J79LU3NC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DankeUbique/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -319,6 +366,7 @@
 				DEVELOPMENT_TEAM = M4J79LU3NC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DankeUbique/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
