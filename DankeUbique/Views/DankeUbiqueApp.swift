@@ -9,7 +9,6 @@ import SwiftUI
 
 @main
 struct DankeUbiqueApp: App {
-
     var body: some Scene {
         WindowGroup {
             MainView()

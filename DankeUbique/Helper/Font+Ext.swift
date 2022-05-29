@@ -11,5 +11,6 @@ extension Font {
     static let du_title = custom("Manrope-Bold", size: 20)
     static let du_button = custom("Manrope-SemiBold", size: 16)
     static let du_text = custom("Quicksand-Regular", size: 17)
+    static let du_text_big = custom("Quicksand-Regular", size: 19)
     static let du_text_linespacing = 1.3
 }

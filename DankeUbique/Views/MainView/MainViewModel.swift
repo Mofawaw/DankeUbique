@@ -13,7 +13,7 @@ class MainViewModel: ObservableObject {
     let networkManager = NetworkManager()
     private var cancellables = Set<AnyCancellable>()
     
-    var networkResult: Result<EnvelopeContent, DUError>?
+    private var networkResult: Result<EnvelopeContent, DUError>?
     var envelopeContent: EnvelopeContent?
     var error: DUError?
     
@@ -55,5 +55,6 @@ class MainViewModel: ObservableObject {
             showingErrorAlert = true
         default: break
         }
+        networkResult = nil
     }
 }

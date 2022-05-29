@@ -19,6 +19,21 @@ struct EnvelopeContentView: View {
                     .frame(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
                     .edgesIgnoringSafeArea(.all)
                 
+                VStack(spacing: .du_padding_small) {
+                    Text(viewModel.envelopeContent?.title ?? "")
+                        .font(.du_title)
+                    
+                    Text(viewModel.envelopeContent?.message ?? "")
+                        .font(.du_text_big)
+                        .multilineTextAlignment(.center)
+                        .lineSpacing(Font.du_text_linespacing)
+                        .padding(.horizontal, .du_padding_large)
+                        .padding(.bottom, .du_padding_medium)
+                    
+                    Image("signature")
+                }
+                .offset(y: -2 * .du_padding_large)
+                
                 VStack {
                     Spacer()
 
