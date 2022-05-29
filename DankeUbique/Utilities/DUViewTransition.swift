@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DUViewTransition: ViewModifier {
+private struct DUViewTransition: ViewModifier {
     @State private var appear = false
     let delay: DispatchTimeInterval
     

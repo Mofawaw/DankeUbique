@@ -25,6 +25,7 @@
 		3DA3714928437CFC00191568 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DA3714828437CFC00191568 /* Quicksand-Bold.ttf */; };
 		3DA3714B2843C22500191568 /* DUViewTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3714A2843C22500191568 /* DUViewTransition.swift */; };
 		3DA3714F2843C55300191568 /* DUEnvelopeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3714E2843C55200191568 /* DUEnvelopeTransition.swift */; };
+		3DA371512843DEB600191568 /* SafeAreaHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA371502843DEB500191568 /* SafeAreaHelper.swift */; };
 		3DD51D2E28422B3400BECE4D /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD51D2D28422B3300BECE4D /* Manrope-Bold.ttf */; };
 		3DD51D3028422B3E00BECE4D /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD51D2F28422B3E00BECE4D /* Manrope-SemiBold.ttf */; };
 		3DD51D3228422B5D00BECE4D /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD51D3128422B5D00BECE4D /* Quicksand-Regular.ttf */; };
@@ -51,6 +52,7 @@
 		3DA3714828437CFC00191568 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Bold.ttf"; path = "../../../../Downloads/Quicksand/static/Quicksand-Bold.ttf"; sourceTree = "<group>"; };
 		3DA3714A2843C22500191568 /* DUViewTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUViewTransition.swift; sourceTree = "<group>"; };
 		3DA3714E2843C55200191568 /* DUEnvelopeTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUEnvelopeTransition.swift; sourceTree = "<group>"; };
+		3DA371502843DEB500191568 /* SafeAreaHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaHelper.swift; sourceTree = "<group>"; };
 		3DD51D2D28422B3300BECE4D /* Manrope-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Manrope-Bold.ttf"; path = "../../../../Downloads/Manrope/static/Manrope-Bold.ttf"; sourceTree = "<group>"; };
 		3DD51D2F28422B3E00BECE4D /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Manrope-SemiBold.ttf"; path = "../../../../Downloads/Manrope/static/Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
 		3DD51D3128422B5D00BECE4D /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Regular.ttf"; path = "../../../../Downloads/Quicksand/static/Quicksand-Regular.ttf"; sourceTree = "<group>"; };
@@ -90,10 +92,10 @@
 		3D5EEA9C28421F3400255280 /* DankeUbique */ = {
 			isa = PBXGroup;
 			children = (
-				3DD51D3428422BD700BECE4D /* Helper */,
+				3DD51D3428422BD700BECE4D /* Utilities */,
 				3D5EEAAB28421F9400255280 /* Logic */,
 				3D5EEAAC28421FA200255280 /* Views */,
-				3DD51D2B28422AD600BECE4D /* Utilities */,
+				3DD51D2B28422AD600BECE4D /* Resources */,
 			);
 			path = DankeUbique;
 			sourceTree = "<group>";
@@ -136,7 +138,7 @@
 			path = MainView;
 			sourceTree = "<group>";
 		};
-		3DD51D2B28422AD600BECE4D /* Utilities */ = {
+		3DD51D2B28422AD600BECE4D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				3DD51D2C28422AE400BECE4D /* Fonts */,
@@ -144,7 +146,7 @@
 				3D5EEAA128421F3400255280 /* Assets.xcassets */,
 				3D5EEAA328421F3400255280 /* Preview Content */,
 			);
-			name = Utilities;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		3DD51D2C28422AE400BECE4D /* Fonts */ = {
@@ -159,7 +161,7 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		3DD51D3428422BD700BECE4D /* Helper */ = {
+		3DD51D3428422BD700BECE4D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				3DD51D3528422C0B00BECE4D /* Font+Ext.swift */,
@@ -169,8 +171,9 @@
 				3DA371432843778A00191568 /* DUButtonStyleScale.swift */,
 				3DA3714A2843C22500191568 /* DUViewTransition.swift */,
 				3DA3714E2843C55200191568 /* DUEnvelopeTransition.swift */,
+				3DA371502843DEB500191568 /* SafeAreaHelper.swift */,
 			);
-			path = Helper;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +264,7 @@
 				3D5EEA9E28421F3400255280 /* DankeUbiqueApp.swift in Sources */,
 				3DA3713A2842813800191568 /* DUError.swift in Sources */,
 				3DA3713C28434EA200191568 /* WebflowDecoder.swift in Sources */,
+				3DA371512843DEB600191568 /* SafeAreaHelper.swift in Sources */,
 				3DA3713328427E5500191568 /* NetworkManager.swift in Sources */,
 				3DA371442843778A00191568 /* DUButtonStyleScale.swift in Sources */,
 				3DA371402843597700191568 /* Color+Ext.swift in Sources */,

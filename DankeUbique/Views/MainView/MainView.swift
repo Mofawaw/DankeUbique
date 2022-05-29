@@ -26,6 +26,7 @@ struct MainView: View {
                         .font(.du_text)
                         .multilineTextAlignment(.center)
                         .lineSpacing(Font.du_text_linespacing)
+                        .minimumScaleFactor(0.8)
                         .padding(.horizontal, .du_padding_large)
                         .padding(.bottom, .du_padding_small)
                         .du_viewTransition(after: .milliseconds(200))
@@ -33,7 +34,6 @@ struct MainView: View {
                     Image("me")
                         .du_viewTransition(after: .milliseconds(400))
                 }
-                .padding(.top, .du_padding_small)
                 
                 Spacer()
                 
@@ -77,7 +77,7 @@ struct MainView: View {
                 Image("ubique-logo")
                     .du_viewTransition(after: .milliseconds(0))
             }
-            .padding(.vertical, .du_padding_small)
+            .padding(.vertical, .du_padding_medium)
         }
         .sheet(isPresented: $viewModel.showingScanner, onDismiss: viewModel.presentScannerResult) {
             CodeScannerView(codeTypes: [.qr]) { viewModel.handleScannerResult($0) }
