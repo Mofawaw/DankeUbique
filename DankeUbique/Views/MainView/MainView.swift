@@ -13,7 +13,7 @@ struct MainView: View {
     
     var body: some View {
         ZStack {
-            Color("background")
+            Color.du_background
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
@@ -40,7 +40,7 @@ struct MainView: View {
                     Button(action: { viewModel.showingScanner = true }) {
                         Circle()
                             .frame(width: 72, height: 72)
-                            .foregroundColor(Color("scan-button"))
+                            .foregroundColor(Color.du_scan_butotn)
                             .overlay(
                                 VStack(spacing: 0) {
                                     Image(systemName: "qrcode.viewfinder")
@@ -51,7 +51,7 @@ struct MainView: View {
                                 }
                             )
                     }
-                    .accentColor(.black)
+                    .accentColor(.du_black)
                 }
                 .offset(y: -.du_padding_large)
                 
@@ -67,6 +67,9 @@ struct MainView: View {
         }
         .alert(isPresented: $viewModel.showingErrorAlert) {
             Alert(title: Text("Error"), message: Text(viewModel.error?.message ?? "Unknown"))
+        }
+        .fullScreenCover(isPresented: $viewModel.showingEnvelopeContent) {
+            EnvelopeContentView(viewModel: viewModel)
         }
     }
 }

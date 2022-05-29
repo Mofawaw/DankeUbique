@@ -31,7 +31,7 @@ class NetworkManager {
             
             if let localURL = localURL {
                 if let urlSource = try? String(contentsOf: localURL) {
-                    if let jsonString = WebflowDecoder.extractJSON(urlSource: urlSource) {
+                    if let jsonString = WebflowDecoder.extractJSON(from: urlSource) {
                         do {
                             let envelopeContent = try JSONDecoder().decode(EnvelopeContent.self, from: Data(jsonString.utf8))
                             self.didFinishWithResult.send(.success(envelopeContent))
