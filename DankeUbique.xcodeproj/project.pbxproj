@@ -12,6 +12,11 @@
 		3D5EEAA528421F3400255280 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5EEAA428421F3400255280 /* Preview Assets.xcassets */; };
 		3D5EEAAE28421FF200255280 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5EEAAD28421FF200255280 /* MainView.swift */; };
 		3D65D38A28426191007374A7 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 3D65D38928426191007374A7 /* CodeScanner */; };
+		3DA3713328427E5500191568 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3713228427E5500191568 /* NetworkManager.swift */; };
+		3DA3713528427F3400191568 /* EnvelopeContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3713428427F3400191568 /* EnvelopeContentModel.swift */; };
+		3DA37137284280C500191568 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA37136284280C500191568 /* MainViewModel.swift */; };
+		3DA3713A2842813800191568 /* DUError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA371392842813800191568 /* DUError.swift */; };
+		3DA3713C28434EA200191568 /* WebflowDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3713B28434EA100191568 /* WebflowDecoder.swift */; };
 		3DD51D2E28422B3400BECE4D /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD51D2D28422B3300BECE4D /* Manrope-Bold.ttf */; };
 		3DD51D3028422B3E00BECE4D /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD51D2F28422B3E00BECE4D /* Manrope-SemiBold.ttf */; };
 		3DD51D3228422B5D00BECE4D /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD51D3128422B5D00BECE4D /* Quicksand-Regular.ttf */; };
@@ -25,6 +30,11 @@
 		3D5EEAA128421F3400255280 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D5EEAA428421F3400255280 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D5EEAAD28421FF200255280 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		3DA3713228427E5500191568 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3DA3713428427F3400191568 /* EnvelopeContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvelopeContentModel.swift; sourceTree = "<group>"; };
+		3DA37136284280C500191568 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		3DA371392842813800191568 /* DUError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUError.swift; sourceTree = "<group>"; };
+		3DA3713B28434EA100191568 /* WebflowDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebflowDecoder.swift; sourceTree = "<group>"; };
 		3DD51D2D28422B3300BECE4D /* Manrope-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Manrope-Bold.ttf"; path = "../../../../Downloads/Manrope/static/Manrope-Bold.ttf"; sourceTree = "<group>"; };
 		3DD51D2F28422B3E00BECE4D /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Manrope-SemiBold.ttf"; path = "../../../../Downloads/Manrope/static/Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
 		3DD51D3128422B5D00BECE4D /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Regular.ttf"; path = "../../../../Downloads/Quicksand/static/Quicksand-Regular.ttf"; sourceTree = "<group>"; };
@@ -83,6 +93,9 @@
 		3D5EEAAB28421F9400255280 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				3DA3713428427F3400191568 /* EnvelopeContentModel.swift */,
+				3DA3713B28434EA100191568 /* WebflowDecoder.swift */,
+				3DA3713228427E5500191568 /* NetworkManager.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -91,9 +104,18 @@
 			isa = PBXGroup;
 			children = (
 				3D5EEA9D28421F3400255280 /* DankeUbiqueApp.swift */,
-				3D5EEAAD28421FF200255280 /* MainView.swift */,
+				3DA37138284280DE00191568 /* MainView */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3DA37138284280DE00191568 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				3DA37136284280C500191568 /* MainViewModel.swift */,
+				3D5EEAAD28421FF200255280 /* MainView.swift */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 		3DD51D2B28422AD600BECE4D /* Utilities */ = {
@@ -122,6 +144,7 @@
 			children = (
 				3DD51D3528422C0B00BECE4D /* Font+Ext.swift */,
 				3DD51D3728422D8600BECE4D /* CGFloat+Ext.swift */,
+				3DA371392842813800191568 /* DUError.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -205,10 +228,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA37137284280C500191568 /* MainViewModel.swift in Sources */,
 				3DD51D3828422D8600BECE4D /* CGFloat+Ext.swift in Sources */,
 				3D5EEA9E28421F3400255280 /* DankeUbiqueApp.swift in Sources */,
+				3DA3713A2842813800191568 /* DUError.swift in Sources */,
+				3DA3713C28434EA200191568 /* WebflowDecoder.swift in Sources */,
+				3DA3713328427E5500191568 /* NetworkManager.swift in Sources */,
 				3D5EEAAE28421FF200255280 /* MainView.swift in Sources */,
 				3DD51D3628422C0B00BECE4D /* Font+Ext.swift in Sources */,
+				3DA3713528427F3400191568 /* EnvelopeContentModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

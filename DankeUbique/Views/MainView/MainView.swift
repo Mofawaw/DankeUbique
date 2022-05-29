@@ -9,7 +9,7 @@ import SwiftUI
 import CodeScanner
 
 struct MainView: View {
-    @State private var scannerIsVisible: Bool = false
+    @StateObject private var viewModel = MainViewModel()
     
     var body: some View {
         ZStack {
@@ -37,7 +37,7 @@ struct MainView: View {
                 ZStack {
                     Image("envelope")
                     
-                    Button(action: { scannerIsVisible = true }) {
+                    Button(action: { viewModel.showingScanner = true }) {
                         Circle()
                             .frame(width: 72, height: 72)
                             .foregroundColor(Color("scan-button"))
@@ -61,16 +61,12 @@ struct MainView: View {
             }
             .padding(.vertical, .du_padding_small)
         }
-        .sheet(isPresented: $scannerIsVisible) {
-            CodeScannerView(codeTypes: [.qr]) { result in
-                switch result {
-                case .success(let result):
-                    print(result.string)
-                case .failure(let error):
-                    print("Scanning failed: \(error.localizedDescription)")
-                }
-            }
-            .edgesIgnoringSafeArea(.all)
+        .sheet(isPresented: $viewModel.showingScanner, onDismiss: viewModel.presentScannerResult) {
+            CodeScannerView(codeTypes: [.qr]) { viewModel.handleScannerResult($0) }
+                .edgesIgnoringSafeArea(.all)
+        }
+        .alert(isPresented: $viewModel.showingErrorAlert) {
+            Alert(title: Text("Error"), message: Text(viewModel.error?.message ?? "Unknown"))
         }
     }
 }
