@@ -22,6 +22,7 @@ struct EnvelopeContentView: View {
                 VStack(spacing: .du_padding_small) {
                     Text(viewModel.envelopeContent.title)
                         .font(.du_title)
+                        .du_viewTransition()
                     
                     Text(viewModel.envelopeContent.message)
                         .font(.du_text_big)
@@ -29,8 +30,10 @@ struct EnvelopeContentView: View {
                         .lineSpacing(Font.du_text_linespacing)
                         .padding(.horizontal, .du_padding_large)
                         .padding(.bottom, .du_padding_medium)
+                        .du_viewTransition(after: .milliseconds(200))
                     
                     Image("signature")
+                        .du_viewTransition(after: .milliseconds(400))
                 }
                 .offset(y: -2 * .du_padding_large)
                 
@@ -56,6 +59,7 @@ struct EnvelopeContentView: View {
                             )
                     }
                     .accentColor(.du_black)
+                    .du_viewTransition()
                 }
                 .padding(.bottom, .du_padding_large + .du_padding_medium)
             }

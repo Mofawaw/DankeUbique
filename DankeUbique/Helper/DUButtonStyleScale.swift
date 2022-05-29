@@ -10,7 +10,7 @@ import SwiftUI
 struct DUButtonStyleScale: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
-            .scaleEffect(configuration.isPressed ? 1.03 : 1)
+            .scaleEffect(configuration.isPressed ? 1.05 : 1)
     }
 }
 
@@ -18,6 +18,6 @@ extension View {
     func du_buttonStyleScale() -> some View {
         self
             .buttonStyle(DUButtonStyleScale())
-            .animation(.easeInOut(duration: 0.1))
+            .animation(.easeInOut(duration: 0.15))
     }
 }

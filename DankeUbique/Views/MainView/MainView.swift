@@ -20,6 +20,7 @@ struct MainView: View {
                 VStack(spacing: .du_padding_small) {
                     Text("Danke für die schöne Zeit")
                         .font(.du_title)
+                        .du_viewTransition()
                     
                     Text("Es war mir eine große Freude, ein Jahr lang Teil von euch gewesen zu sein. Trotz meiner kurzen Zeit habe ich unglaublich viel gelernt und eine sehr coole Zeit gehabt.\nDie Kultur und Atmosphäre ist wirklich fantastisch. Ich bin gespannt auf den geilen Scheiss, der noch kommt!")
                         .font(.du_text)
@@ -27,8 +28,10 @@ struct MainView: View {
                         .lineSpacing(Font.du_text_linespacing)
                         .padding(.horizontal, .du_padding_large)
                         .padding(.bottom, .du_padding_small)
+                        .du_viewTransition(after: .milliseconds(200))
                     
                     Image("me")
+                        .du_viewTransition(after: .milliseconds(400))
                 }
                 .padding(.top, .du_padding_small)
                 
@@ -64,7 +67,7 @@ struct MainView: View {
                                 )
                         }
                     }
-                    
+                    .du_envelopeTransition(after: .milliseconds(800))
                 }
                 .du_buttonStyleScale()
                 .offset(y: -.du_padding_large)
@@ -72,6 +75,7 @@ struct MainView: View {
                 Spacer()
                 
                 Image("ubique-logo")
+                    .du_viewTransition(after: .milliseconds(0))
             }
             .padding(.vertical, .du_padding_small)
         }
