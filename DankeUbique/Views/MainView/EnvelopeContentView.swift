@@ -20,10 +20,10 @@ struct EnvelopeContentView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack(spacing: .du_padding_small) {
-                    Text(viewModel.envelopeContent?.title ?? "")
+                    Text(viewModel.envelopeContent.title)
                         .font(.du_title)
                     
-                    Text(viewModel.envelopeContent?.message ?? "")
+                    Text(viewModel.envelopeContent.message)
                         .font(.du_text_big)
                         .multilineTextAlignment(.center)
                         .lineSpacing(Font.du_text_linespacing)

@@ -10,11 +10,12 @@ import Combine
 import CodeScanner
 
 class MainViewModel: ObservableObject {
-    let networkManager = NetworkManager()
+    private let networkManager = NetworkManager()
+    let userDefaultsManager = UserDefaultsManager.shared
     private var cancellables = Set<AnyCancellable>()
     
     private var networkResult: Result<EnvelopeContent, DUError>?
-    var envelopeContent: EnvelopeContent?
+    var envelopeContent = EnvelopeContent(name: "", title: "", message: "")
     var error: DUError?
     
     @Published var showingScanner: Bool = false
@@ -22,7 +23,13 @@ class MainViewModel: ObservableObject {
     @Published var showingErrorAlert: Bool = false
     
     init() {
-        setupNetworkSubsribers()
+        if userDefaultsManager.hasEnvelopeContent {
+            if let envelopeContent = userDefaultsManager.getEnvelopeContent() {
+                self.envelopeContent = envelopeContent
+            }
+        } else {
+            setupNetworkSubsribers()
+        }
     }
     
     private func setupNetworkSubsribers() {
@@ -33,6 +40,14 @@ class MainViewModel: ObservableObject {
                 print(result)
             }
         }.store(in: &cancellables)
+    }
+    
+    func envelopeTapped() {
+        if userDefaultsManager.hasEnvelopeContent {
+            showingEnvelopeContent = true
+        } else {
+            showingScanner = true
+        }
     }
     
     func handleScannerResult(_ scannerResult: Result<ScanResult, ScanError>) {

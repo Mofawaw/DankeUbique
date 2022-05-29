@@ -8,6 +8,7 @@
 import Foundation
 
 struct EnvelopeContent: Decodable {
+    let name: String
     let title: String
     let message: String
 }

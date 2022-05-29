@@ -19,6 +19,10 @@
 		3DA3713C28434EA200191568 /* WebflowDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3713B28434EA100191568 /* WebflowDecoder.swift */; };
 		3DA3713E284356EA00191568 /* EnvelopeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3713D284356EA00191568 /* EnvelopeContentView.swift */; };
 		3DA371402843597700191568 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA3713F2843597700191568 /* Color+Ext.swift */; };
+		3DA37142284372FD00191568 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA37141284372FD00191568 /* UserDefaultsManager.swift */; };
+		3DA371442843778A00191568 /* DUButtonStyleScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA371432843778A00191568 /* DUButtonStyleScale.swift */; };
+		3DA3714728437CF300191568 /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DA3714628437CF300191568 /* Quicksand-Medium.ttf */; };
+		3DA3714928437CFC00191568 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DA3714828437CFC00191568 /* Quicksand-Bold.ttf */; };
 		3DD51D2E28422B3400BECE4D /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD51D2D28422B3300BECE4D /* Manrope-Bold.ttf */; };
 		3DD51D3028422B3E00BECE4D /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD51D2F28422B3E00BECE4D /* Manrope-SemiBold.ttf */; };
 		3DD51D3228422B5D00BECE4D /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DD51D3128422B5D00BECE4D /* Quicksand-Regular.ttf */; };
@@ -39,6 +43,10 @@
 		3DA3713B28434EA100191568 /* WebflowDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebflowDecoder.swift; sourceTree = "<group>"; };
 		3DA3713D284356EA00191568 /* EnvelopeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvelopeContentView.swift; sourceTree = "<group>"; };
 		3DA3713F2843597700191568 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		3DA37141284372FD00191568 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		3DA371432843778A00191568 /* DUButtonStyleScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUButtonStyleScale.swift; sourceTree = "<group>"; };
+		3DA3714628437CF300191568 /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Medium.ttf"; path = "../../../../Downloads/Quicksand/static/Quicksand-Medium.ttf"; sourceTree = "<group>"; };
+		3DA3714828437CFC00191568 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Bold.ttf"; path = "../../../../Downloads/Quicksand/static/Quicksand-Bold.ttf"; sourceTree = "<group>"; };
 		3DD51D2D28422B3300BECE4D /* Manrope-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Manrope-Bold.ttf"; path = "../../../../Downloads/Manrope/static/Manrope-Bold.ttf"; sourceTree = "<group>"; };
 		3DD51D2F28422B3E00BECE4D /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Manrope-SemiBold.ttf"; path = "../../../../Downloads/Manrope/static/Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
 		3DD51D3128422B5D00BECE4D /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Regular.ttf"; path = "../../../../Downloads/Quicksand/static/Quicksand-Regular.ttf"; sourceTree = "<group>"; };
@@ -100,6 +108,7 @@
 				3DA3713428427F3400191568 /* EnvelopeContentModel.swift */,
 				3DA3713B28434EA100191568 /* WebflowDecoder.swift */,
 				3DA3713228427E5500191568 /* NetworkManager.swift */,
+				3DA37141284372FD00191568 /* UserDefaultsManager.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -140,6 +149,8 @@
 				3DD51D2F28422B3E00BECE4D /* Manrope-SemiBold.ttf */,
 				3DD51D2D28422B3300BECE4D /* Manrope-Bold.ttf */,
 				3DD51D3128422B5D00BECE4D /* Quicksand-Regular.ttf */,
+				3DA3714628437CF300191568 /* Quicksand-Medium.ttf */,
+				3DA3714828437CFC00191568 /* Quicksand-Bold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -151,6 +162,7 @@
 				3DA3713F2843597700191568 /* Color+Ext.swift */,
 				3DD51D3728422D8600BECE4D /* CGFloat+Ext.swift */,
 				3DA371392842813800191568 /* DUError.swift */,
+				3DA371432843778A00191568 /* DUButtonStyleScale.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -219,11 +231,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA3714928437CFC00191568 /* Quicksand-Bold.ttf in Resources */,
 				3D5EEAA528421F3400255280 /* Preview Assets.xcassets in Resources */,
 				3DD51D2E28422B3400BECE4D /* Manrope-Bold.ttf in Resources */,
 				3DD51D3028422B3E00BECE4D /* Manrope-SemiBold.ttf in Resources */,
 				3D5EEAA228421F3400255280 /* Assets.xcassets in Resources */,
 				3DD51D3228422B5D00BECE4D /* Quicksand-Regular.ttf in Resources */,
+				3DA3714728437CF300191568 /* Quicksand-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,11 +250,13 @@
 			files = (
 				3DA37137284280C500191568 /* MainViewModel.swift in Sources */,
 				3DD51D3828422D8600BECE4D /* CGFloat+Ext.swift in Sources */,
+				3DA37142284372FD00191568 /* UserDefaultsManager.swift in Sources */,
 				3DA3713E284356EA00191568 /* EnvelopeContentView.swift in Sources */,
 				3D5EEA9E28421F3400255280 /* DankeUbiqueApp.swift in Sources */,
 				3DA3713A2842813800191568 /* DUError.swift in Sources */,
 				3DA3713C28434EA200191568 /* WebflowDecoder.swift in Sources */,
 				3DA3713328427E5500191568 /* NetworkManager.swift in Sources */,
+				3DA371442843778A00191568 /* DUButtonStyleScale.swift in Sources */,
 				3DA371402843597700191568 /* Color+Ext.swift in Sources */,
 				3D5EEAAE28421FF200255280 /* MainView.swift in Sources */,
 				3DD51D3628422C0B00BECE4D /* Font+Ext.swift in Sources */,
@@ -372,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DankeUbique/Preview Content\"";
@@ -405,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DankeUbique/Preview Content\"";

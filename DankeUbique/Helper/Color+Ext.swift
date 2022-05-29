@@ -9,6 +9,6 @@ import SwiftUI
 
 extension Color {
     static let du_background = Color("background")
-    static let du_scan_butotn = Color("scan-button")
+    static let du_scan_button = Color("scan-button")
     static let du_black = Color.black
 }

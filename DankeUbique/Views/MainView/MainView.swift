@@ -34,25 +34,39 @@ struct MainView: View {
                 
                 Spacer()
                 
-                ZStack {
-                    Image("envelope")
-                    
-                    Button(action: { viewModel.showingScanner = true }) {
-                        Circle()
-                            .frame(width: 72, height: 72)
-                            .foregroundColor(Color.du_scan_butotn)
-                            .overlay(
-                                VStack(spacing: 0) {
-                                    Image(systemName: "qrcode.viewfinder")
-                                        .font(.system(size: 24, weight: .light))
+                Button(action: { viewModel.envelopeTapped() }) {
+                    ZStack {
+                        Image("envelope")
+                        
+                        if viewModel.userDefaultsManager.hasEnvelopeContent {
+                            Group {
+                                Text(viewModel.envelopeContent.name.first?.description ?? "")
+                                    .font(.custom("Quicksand-Bold", size: 32))
+                                    .foregroundColor(.du_scan_button)
+                                +
+                                Text(viewModel.envelopeContent.name.dropFirst())
+                                    .font(.custom("Quicksand-Medium", size: 32))
+                                    .foregroundColor(.du_background)
+                            }
+                            .offset(y: -50)
+                        } else {
+                            Circle()
+                                .frame(width: 72, height: 72)
+                                .foregroundColor(Color.du_scan_button)
+                                .overlay(
+                                    VStack(spacing: 0) {
+                                        Image(systemName: "qrcode.viewfinder")
+                                            .font(.system(size: 24, weight: .light))
 
-                                    Text("Scan")
-                                        .font(.du_button)
-                                }
-                            )
+                                        Text("Scan")
+                                            .font(.du_button)
+                                    }
+                                )
+                        }
                     }
-                    .accentColor(.du_black)
+                    
                 }
+                .du_buttonStyleScale()
                 .offset(y: -.du_padding_large)
                 
                 Spacer()

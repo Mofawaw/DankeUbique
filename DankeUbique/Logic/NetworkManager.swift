@@ -34,6 +34,7 @@ class NetworkManager {
                     if let jsonString = WebflowDecoder.extractJSON(from: urlSource) {
                         do {
                             let envelopeContent = try JSONDecoder().decode(EnvelopeContent.self, from: Data(jsonString.utf8))
+                            UserDefaultsManager.shared.storeEnvelopeContentJSON(jsonString)
                             self.didFinishWithResult.send(.success(envelopeContent))
                         } catch {
                             self.didFinishWithResult.send(.failure(.network_unknown))
