@@ -57,7 +57,7 @@ struct EnvelopeContentView: View {
                     }
                     .accentColor(.du_black)
                 }
-                .padding(.vertical, .du_padding_large)
+                .padding(.bottom, .du_padding_large + .du_padding_medium)
             }
         }
         .edgesIgnoringSafeArea(.all)

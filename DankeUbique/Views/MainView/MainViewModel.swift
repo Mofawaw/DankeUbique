@@ -37,7 +37,6 @@ class MainViewModel: ObservableObject {
             DispatchQueue.main.async {
                 self.networkResult = result
                 self.showingScanner = false
-                print(result)
             }
         }.store(in: &cancellables)
     }
@@ -62,14 +61,17 @@ class MainViewModel: ObservableObject {
     
     func presentScannerResult() {
         switch networkResult {
-        case .success(let envelopeContent):
-            self.envelopeContent = envelopeContent
-            showingEnvelopeContent = true
-        case .failure(let error):
-            self.error = error
-            showingErrorAlert = true
+        case .success(let envelopeContent): self.envelopeContent = envelopeContent
+        case .failure(let error): self.error = error
         default: break
         }
-        networkResult = nil
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            switch self.networkResult {
+            case .success(_): self.showingEnvelopeContent = true
+            case .failure(_): self.showingErrorAlert = true
+            default: break
+            }
+            self.networkResult = nil
+        }
     }
 }
